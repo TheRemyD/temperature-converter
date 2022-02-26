@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This is where your description goes">
+		<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script type="text/javascript" src="js/main.js" defer></script>
+	</head>
+
+	<body>
+		<!-- Background Video -->
+		<video autoplay muted loop id="videoPlayer">
+			<source src="assets/videos/nice.mp4" type="video/mp4">
+		</video>
+
+		<main class="thermometers">
+			<section class="thermometer fahrenheit">
+				<label class="lbl fahrenheit-label" for="gauge-f">°F</label>
+				<input id="gauge-f" type="range" min="-50" max="200" value="0" orient="vertical">
+				<label for="gauge-f">
+					<input class="fahrenheit-input" type="text"	placeholder="0">
+				</label>
+			</section>
+			<section class="thermometer celsius">
+				<label class="lbl celsius-label" for="gauge-f">°C</label>
+				<input id="gauge-c" type="range" min="-50" max="100" value="-18" orient="vertical">
+				<label for="gauge-c">
+					<input class="celsius-input" type="text" placeholder="-18">
+				</label>
+			</section>
+		</main>
+	</body>
+</html>
